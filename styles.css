@@ -1,23 +1,33 @@
-body {
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#paintZone {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: flex-start;
-    height: 600px;
-    width: 600px;
-    border: solid green;
+#grid {
+    display: grid;
+    min-height: 320px;
+    max-height: 650px;
+    min-width: 320px;
+    max-width: 650px;
+    border: solid grey;
 }
 .square {
     background: black;
 }
 #controls {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 10px 0;
+    gap: 20px;
+}
+#controls button {
+    min-width: 60px;
 }
