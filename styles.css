@@ -1,17 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #container {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     align-items: flex-start;
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     border: solid green;
 }
 .square {
-    height: 100px;
-    width: 100px;
     background: black;
 }
-.square:hover {
-    background-color: red;
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
